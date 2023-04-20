@@ -1,0 +1,180 @@
+html {height: 100%; overflow-x: hidden;}
+body {
+    min-height: 100%;
+    position: relative;
+    margin: 0px;
+}
+#footer {
+    bottom: 0;
+    min-height: 15px;
+    position: absolute;
+}
+
+
+
+/* ---------------------------------- */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  background-image: url('../img/bg_bottom.jpg');
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-size: 70vw;
+  background-repeat: no-repeat;
+  padding-bottom: 3rem;
+}
+
+#nav-container {
+  background-color: #333;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#nav-container > div {
+  align-self: center;
+}
+
+.logo img{
+  flex-grow:2;
+  height: 40px;
+  padding: 0.25em 0.5em;
+  
+}
+.wp-block-file *+.wp-block-file__button {
+  margin-left: .75em;
+  display: none;
+}
+
+.navigation {
+  flex-grow:7;
+}
+
+.search-nav{
+  flex-grow: 3;
+}
+
+.custom-menu-class ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+  display: flex;
+}
+.custom-menu-class ul li a{
+  color: white;
+  padding: 1em;
+}
+
+
+.phar {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.entry-title 
+, .cool {
+  font-size: 55px;
+  font-family: 'coolveticaregular';
+  font-weight: normal;
+}
+
+.cool_example {
+  font-family: 'coolveticaregular';
+  font-weight: normal;
+  color: black;
+}
+
+.cool_example a {
+  text-decoration: none;
+  color: black;
+  margin: 1rem 0 4rem 0;
+  display: block;
+}
+
+.cool2 {
+  padding: 0;
+  margin: 0;
+  gap: 0; 
+}
+
+.around {
+  display: flex;
+}
+.around_child {
+  justify-content: space-around;
+}
+
+#primary {
+  margin: 0 12%;
+}
+
+.wp-block-column img {
+border: 1px solid darkgreen;
+}
+.wp-block-group.is-vertical.is-layout-flex {
+  display: block;
+}
+@font-face {
+  font-family: 'coolveticaregular';
+  src: url('../fonts/coolvetica_rg-webfont.woff2') format('woff2'),
+       url('../fonts/coolvetica_rg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/* 
+.wp-embed-aspect-16-9 .wp-has-aspect-ratio {
+  width: max-content;
+  height: 100%;
+} */
+
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+  .search-nav {display: none;}
+  .entry-title, .cool {font-size: 2.5rem;}
+
+  .cool_example a {
+    margin: 1rem 0 2rem 0;
+  }
+  .wp-container-9 {
+    padding: 0;
+    margin: 0;
+    gap: 0; 
+  }
+  .wp-container-4 {
+    padding: 0;
+    margin: 0;
+  }
+  /* .wp-block-buttons>.wp-block-button.has-custom-height {
+    height: 200%;
+   } */
+
+
+
+   .wp-block-file:not(.wp-element-button) {
+    font-size: 1em;
+    display: none;
+}
+}
+
+.custom-menu-class ul li a {
+  color: white;
+  padding: 1em;
+  text-decoration: none;
+}
+
+a.post-edit-link {
+  display: none;
+}
+
+/* 
+.wp-container-11 {
+ padding: 0;
+ margin: 0;
+} */
